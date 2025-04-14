@@ -1,0 +1,43 @@
+
+====VENV ==============================
+
+w VSC 
+
+Activate venv:
+
+first patch
+cd C:\Users\Dell\Downloads\AIbakalar\
+activation : 
+
+.\venv\Scripts\Activate
+
+
+: deactivate
+
+
+PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT>      
+
+
+
+
+Activation of  VENV (virtual environment : ==========================
+
+
+alllow for scripts : --
+running scripts is disabled on this system
+
+if probolem : --
+3: start PowerShell admin priviledges
+
+write : 
+
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+
+
+activation venv : ---
+.\venv\Scripts\Activate
+
+or 
+python -m venv venv
+
+.\venv\Scripts\activate

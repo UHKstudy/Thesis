@@ -1,0 +1,50 @@
+
+1. Basic Facts (Fakty podstawowe)
+
+What is the capital of Poland?
+How many days does February have in a leap year?
+What is the name of university in Hradec Kralove?
+When is New Year’s Day celebrated?
+Who painted the Lady with an Ermine?
+Where is the painting called 'Lady with an Ermine' located?
+What is the language used in the Czech Republic?
+
+
+---
+
+2. Paraphrased Questions (Pytania przekształcone)
+
+
+Warsaw is the capital of which country?
+How many days does February contain in a leap year?
+Which university that teaches computer science is the biggest in Hradec Kralove?
+On which date do people celebrate New Year’s Day?
+Who is the author of painting 'Lady with an Ermine'?
+In which country can you find the painting 'Lady with an Ermine'?
+Which language is spoken in the Czech Republic ?
+
+
+---
+
+3. Out-of-Scope Questions (Pytania spoza zakresu chatbota)
+
+What is the next winning lottery number?
+What is my favorite color?
+How many planets will be discovered in the future?
+What will the stock market do next week?
+Where will I be in 10 years?
+Can you tell me what I had for breakfast today?
+Who will be the next president of Poland?
+
+-----
+
+4. Open-Ended & Logical (Pytania otwarte i logiczne)
+
+Give me an example of a secure password.
+What is the next number in the sequence: 2, 4, 8, 16...?
+What is the difference between a city and a country?
+How does a leap year work?
+Explain the concept of gravity in simple terms.
+What are the main colors of the Polish flag?
+What happens when you mix blue and yellow paint?
+

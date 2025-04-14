@@ -1,0 +1,362 @@
+STEPS PL :
+
+0. 
+Plan : do programowania chatbotów użyłem środowiska Python w wersji 3.9 - czyli stabilniejszej wersji. Nie używałem wersji najnowszej python gdyż często nowsze wersje są niestabilne i wymagają poprawek , wolałem się oprzeć na starszej ale sprawdzonej wersji. Programowanie chatbota jest tworzone w Virtual Studio Code. 
+
+1. aktywowano wirtualne środowisko (venv)
+poprzez komendę w Windows PowerShell : 
+PS C:\Users\Dell> Set-ExecutionPolicy Unrestricted -Scope Process
+po potwierdzeniu (y) można było uruchomić venv : 
+PS C:\Users\Dell> venv\Scripts\Activate
+Ta komenda aktywowała wirtualne środowisko Pythona.
+
+2. zainstalowano wymagane biblioteki, tj. chatterbot  czyli główną bibliotekę do chatbota , następnie chatterbot-corpus która stanowi zestaw danych dla ChatterBota po czym 'scikit-learn' czyli bibliotekę używaną do analizy i przetwarzania tekstu w ChatterBocie   , komenda w windows powershell  : 
+(venv) PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT> pip install chatterbot chatterbot-corpus scikit-learn
+Ponieważ ChatterBot używa spaCy do analizy języka, wymagało to doinstalowania : 
+(venv) PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT> pip install spacy
+z powodu trudności z instalacją model trzeba było zainstalować ręcznie z pliku .tar.gz 
+
+zainstalowano Chatbota w VSC, terminal w VSC - instalacja była skomplikowana ale finalnie udało się to rozwiązać , log konsoli   : 
+
+
+PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT> python --version
+>>
+Python 3.9.0
+PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT> 
+PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT> python chatbotA.py
+>>
+Traceback (most recent call last):
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\chatbotA.py", line 76, in <module>   
+    run_chatbot()
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\chatbotA.py", line 11, in run_chatbot
+    chatbot = ChatBot(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\chatterbot\chatterbot.py", line 35, in __init__    self.tagger = Tagger(language=kwargs.get(
+    self.nlp = spacy.load(model, exclude=['ner'])
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\__init__.py", line 51, in load
+    return util.load_model(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\util.py", line 472, in load_model        
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT> python -m spacy download en_core_web_sm
+>>
+Traceback (most recent call last):
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connection.py", line 713, in connect   
+    self.sock = sock = self._connect_tls_proxy(self.host, sock)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connection.py", line 813, in _connect_tls_proxy
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\util\ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\util\ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Programy\Python39-32\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Programy\Python39-32\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Programy\Python39-32\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+FileNotFoundError: [Errno 2] No such file or directory
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', FileNotFoundError(2, 'No such file or directory'))        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\adapters.py", line 667, in send       
+    resp = conn.urlopen(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\util\retry.py", line 519, in increment 
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded 
+with url: /explosion/spacy-models/master/compatibility.json (Caused by ProxyError('Unable to connect to proxy', FileNotFoundError(2, 'No such file or directory')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Programy\Python39-32\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Programy\Python39-32\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\__main__.py", line 4, in <module>        
+    setup_cli()
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\cli\_util.py", line 87, in setup_cli
+    command(prog_name=COMMAND)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\click\core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\typer\core.py", line 740, in main
+    return _main(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\typer\core.py", line 195, in _main
+    rv = self.invoke(ctx)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\click\core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\click\core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\click\core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\typer\main.py", line 697, in wrapper
+    return callback(**use_params)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\cli\download.py", line 44, in download_cli
+    download(model, direct, sdist, *ctx.args)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\cli\download.py", line 85, in download
+    compatibility = get_compatibility()
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\cli\download.py", line 130, in get_compatibility
+    r = requests.get(about.__compatibility__)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\sessions.py", line 589, in request    
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\sessions.py", line 703, in send       
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\adapters.py", line 694, in send       
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /explosion/spacy-models/master/compatibility.json (Caused by ProxyError('Unable to connect to proxy', FileNotFoundError(2, 'No such file or directory')))     python chatbotA.py
+>> C:\Users\Dell\Downloads\AIbakalar\PROJEKT>
+Traceback (most recent call last):
+    run_chatbot()
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\chatbotA.py", line 11, in run_chatbot
+    chatbot = ChatBot(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\chatterbot\chatterbot.py", line 35, in __init__    self.tagger = Tagger(language=kwargs.get(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\chatterbot\tagging.py", line 53, in __init__   
+    self.nlp = spacy.load(model, exclude=['ner'])
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\__init__.py", line 51, in load
+    return util.load_model(
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT> pip install en_core_web_sm-3.8.0.tar.gz
+Processing c:\users\dell\downloads\aibakalar\projekt\en_core_web_sm-3.8.0.tar.gz
+Using legacy 'setup.py install' for en-core-web-sm, since package 'wheel' is not installed.
+Installing collected packages: en-core-web-sm
+    Running setup.py install for en-core-web-sm ... done
+Successfully installed en-core-web-sm-3.8.0
+WARNING: You are using pip version 20.2.3; however, version 25.0.1 is available.
+You should consider upgrading via the 'c:\users\dell\downloads\aibakalar\projekt\venv\scripts\python.exe -m pip install 
+--upgrade pip' command.
+PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT> python -m spacy validate
+>>
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connection.py", line 713, in connect   
+    self.sock = sock = self._connect_tls_proxy(self.host, sock)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connection.py", line 813, in _connect_tls_proxy
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\util\ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\util\ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Programy\Python39-32\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Programy\Python39-32\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Programy\Python39-32\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+FileNotFoundError: [Errno 2] No such file or directory
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', FileNotFoundError(2, 'No such file or directory'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\adapters.py", line 667, in send       
+    resp = conn.urlopen(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\util\retry.py", line 519, in increment 
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded 
+with url: /explosion/spacy-models/master/compatibility.json (Caused by ProxyError('Unable to connect to proxy', FileNotFoundError(2, 'No such file or directory')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Programy\Python39-32\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Programy\Python39-32\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\__main__.py", line 4, in <module>        
+    setup_cli()
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\cli\_util.py", line 87, in setup_cli     
+    command(prog_name=COMMAND)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\click\core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\typer\core.py", line 740, in main
+    return _main(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\typer\core.py", line 195, in _main
+    rv = self.invoke(ctx)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\click\core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\click\core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\click\core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\typer\main.py", line 697, in wrapper
+    return callback(**use_params)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\cli\validate.py", line 30, in validate_cli
+    validate()
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\cli\validate.py", line 34, in validate
+    model_pkgs, compat = get_model_pkgs()
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\cli\validate.py", line 79, in get_model_pkgs
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\sessions.py", line 589, in request    
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\sessions.py", line 703, in send       
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\adapters.py", line 694, in send       
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /explosion/spacy-models/master/compatibility.json (Caused by ProxyError('Unable to connect to proxy', FileNotFoundError(2, 'No such file or directory')))
+PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT> pip uninstall en-core-web-sm
+Found existing installation: en-core-web-sm 3.8.0
+Uninstalling en-core-web-sm-3.8.0:
+  Would remove:
+    c:\users\dell\downloads\aibakalar\projekt\venv\lib\site-packages\en_core_web_sm-3.8.0-py3.9.egg-info
+Proceed (y/n)? y
+  Successfully uninstalled en-core-web-sm-3.8.0
+PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT> pip install C:\Users\Dell\Downloads\AIbakalar\PROJEKT\en_core_web_sm-3.8.0.tar.gz
+>>
+Processing c:\users\dell\downloads\aibakalar\projekt\en_core_web_sm-3.8.0.tar.gz
+Using legacy 'setup.py install' for en-core-web-sm, since package 'wheel' is not installed.
+Installing collected packages: en-core-web-sm
+    Running setup.py install for en-core-web-sm ... done
+Successfully installed en-core-web-sm-3.8.0
+WARNING: You are using pip version 20.2.3; however, version 25.0.1 is available.
+You should consider upgrading via the 'c:\users\dell\downloads\aibakalar\projekt\venv\scripts\python.exe -m pip install 
+--upgrade pip' command.
+PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT> python -m spacy validate
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connection.py", line 713, in connect   
+    self.sock = sock = self._connect_tls_proxy(self.host, sock)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connection.py", line 813, in _connect_tls_proxy
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\util\ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\util\ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Programy\Python39-32\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Programy\Python39-32\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Programy\Python39-32\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+FileNotFoundError: [Errno 2] No such file or directory
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', FileNotFoundError(2, 'No such file or directory'))        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\adapters.py", line 667, in send       
+    resp = conn.urlopen(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\urllib3\util\retry.py", line 519, in increment 
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded 
+with url: /explosion/spacy-models/master/compatibility.json (Caused by ProxyError('Unable to connect to proxy', FileNotFoundError(2, 'No such file or directory')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Programy\Python39-32\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Programy\Python39-32\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\__main__.py", line 4, in <module>
+    setup_cli()
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\cli\_util.py", line 87, in setup_cli     
+    command(prog_name=COMMAND)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\click\core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\typer\core.py", line 740, in main
+    return _main(
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\typer\core.py", line 195, in _main
+    rv = self.invoke(ctx)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\click\core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\click\core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\click\core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\typer\main.py", line 697, in wrapper
+    return callback(**use_params)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\cli\validate.py", line 30, in validate_cli
+    validate()
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\cli\validate.py", line 34, in validate   
+    model_pkgs, compat = get_model_pkgs()
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\spacy\cli\validate.py", line 79, in get_model_pkgs
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\api.py", line 73, in get
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\sessions.py", line 589, in request    
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\sessions.py", line 703, in send       
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Dell\Downloads\AIbakalar\PROJEKT\venv\lib\site-packages\requests\adapters.py", line 694, in send       
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded windError(2, 'No such file or directory')))
+PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT>
+PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT> pip uninstall en-core-web-sm
+>>
+Found existing installation: en-core-web-sm 3.8.0
+Uninstalling en-core-web-sm-3.8.0:
+  Would remove:
+    c:\users\dell\downloads\aibakalar\projekt\venv\lib\site-packages\en_core_web_sm-3.8.0-py3.9.egg-info
+    c:\users\dell\downloads\aibakalar\projekt\venv\lib\site-packages\en_core_web_sm\*
+  Successfully uninstalled en-core-web-sm-3.8.0
+PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT> pip install C:\Users\Dell\Downloads\AIbakalar\PROJEKT\en_core_web_sm-3.8.0.tar.gz
+>>
+Processing c:\users\dell\downloads\aibakalar\projekt\en_core_web_sm-3.8.0.tar.gz
+Using legacy 'setup.py install' for en-core-web-sm, since package 'wheel' is not installed.
+Installing collected packages: en-core-web-sm
+Successfully installed en-core-web-sm-3.8.0
+WARNING: You are using pip version 20.2.3; however, version 25.0.1 is available.
+--upgrade pip' command.
+PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT> python -m spacy link en_core_web_sm en_core_web_sm --force
+>> 
+Usage: python -m spacy link [OPTIONS] ARGS KWARGS
+Try 'python -m spacy link --help' for help.
+╭─ Error ──────────────────────────────────────────────────────────────────────────────────────────────────────────────╮│ No such option: --force                                                                                              │╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT> python -c "import spacy; nlp = spacy.load('en_core_web_sm'); print('SpaCy 
+działa poprawnie!')"
+>> 
+SpaCy działa poprawnie!
+PS C:\Users\Dell\Downloads\AIbakalar\PROJEKT> python chatbotA.py
+>>
+List Trainer: 10it [00:00, 164.03it/s]
+List Trainer: 6it [00:00, 171.53it/s]
+ChatbotA is ready. Type 'exit' or 'quit' to stop.
+You:
+
+
+
+============================
+
+
+
+==================================================
