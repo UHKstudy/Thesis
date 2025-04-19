@@ -8,7 +8,7 @@ INFO:root:[AutoTrain] ep=6, question='How many days does February contain in a l
 INFO:root:[AutoTrain] ep=7, question='What is Poland's capital?', correct=0, chosen=9, rew=-1, eps=0.961
 INFO:root:[AutoTrain] ep=8, question='Berlin is capital of which country?', correct=12, chosen=10, rew=-1, eps=0.956
 INFO:root:[AutoTrain] ep=9, question='Where can I find the painting 'Lady with an Ermine'?', correct=8, chosen=8, rew=1, eps=0.951
-INFO:root:[AutoTrain] ep=10, question='On which date do people celebrate New Year’s Day?', correct=7, chosen=5, rew=-1, eps=0.946
+INFO:root:[AutoTrain] ep=10, question='On which date do people celebrate New Yearâ€™s Day?', correct=7, chosen=5, rew=-1, eps=0.946
 INFO:root:[AutoTrain] ep=11, question='Capital of Poland is? ', correct=0, chosen=6, rew=-1, eps=0.942
 INFO:root:[AutoTrain] ep=12, question='Language spoken in Czech Republic?', correct=10, chosen=4, rew=-1, eps=0.937
 INFO:root:[AutoTrain] ep=13, question='In which country can you find the painting 'Lady with an Ermine'?', correct=8, chosen=1, rew=-1, eps=0.932
@@ -30,7 +30,7 @@ INFO:root:[AutoTrain] ep=28, question='Language spoken in Czech Republic?', corr
 INFO:root:[AutoTrain] ep=29, question='What happens when you mix blue and yellow paint? ', correct=4, chosen=12, rew=-1, eps=0.860
 INFO:root:[AutoTrain] ep=30, question='Capital of Poland is? ', correct=0, chosen=6, rew=-1, eps=0.856
 INFO:root:[AutoTrain] ep=31, question='Czech Republic official language?', correct=10, chosen=5, rew=-1, eps=0.852
-INFO:root:[AutoTrain] ep=32, question='When is New Year’s Day celebrated?', correct=7, chosen=3, rew=-1, eps=0.848
+INFO:root:[AutoTrain] ep=32, question='When is New Yearâ€™s Day celebrated?', correct=7, chosen=3, rew=-1, eps=0.848
 INFO:root:[AutoTrain] ep=33, question='Where is located the painting called 'Lady with an Ermine'?', correct=8, chosen=4, rew=-1, eps=0.843
 INFO:root:[AutoTrain] ep=34, question='Painter of the Lady with an Ermine?', correct=1, chosen=4, rew=-1, eps=0.839
 INFO:root:[AutoTrain] ep=35, question='What is the name of the painting , which features a lady with an ermine?', correct=9, chosen=5, rew=-1, eps=0.835
@@ -186,7 +186,7 @@ INFO:root:[AutoTrain] ep=184, question='Where is 'Lady with an Ermine' kept?', c
 INFO:root:[AutoTrain] ep=185, question='Give me an example of a secure password.', correct=4, chosen=8, rew=-1, eps=0.394
 INFO:root:[AutoTrain] ep=186, question='Where will I be in 10 years?', correct=11, chosen=8, rew=-1, eps=0.392
 INFO:root:[AutoTrain] ep=187, question='Language spoken in Czech Republic?', correct=10, chosen=7, rew=-1, eps=0.390
-INFO:root:[AutoTrain] ep=188, question='On which date do people celebrate New Year’s Day?', correct=7, chosen=8, rew=-1, eps=0.388
+INFO:root:[AutoTrain] ep=188, question='On which date do people celebrate New Yearâ€™s Day?', correct=7, chosen=8, rew=-1, eps=0.388
 INFO:root:[AutoTrain] ep=189, question='Explain the concept of gravity in simple terms.', correct=4, chosen=6, rew=-1, eps=0.386
 INFO:root:[AutoTrain] ep=190, question='What is my favorite color?', correct=11, chosen=8, rew=-1, eps=0.384
 INFO:root:[AutoTrain] ep=191, question='Can you tell me what I had for breakfast today?', correct=11, chosen=1, rew=-1, eps=0.382
@@ -194,7 +194,7 @@ INFO:root:[AutoTrain] ep=192, question='Who is the author of 'Lady with an Ermin
 INFO:root:[AutoTrain] ep=193, question='Czech Republic language?', correct=10, chosen=10, rew=1, eps=0.378
 INFO:root:[AutoTrain] ep=194, question='What language do people speak in Czech Republic?', correct=10, chosen=10, rew=1, eps=0.376
 INFO:root:[AutoTrain] ep=195, question='What is the capital of the Czech Republic?', correct=5, chosen=6, rew=-1, eps=0.374
-INFO:root:[AutoTrain] ep=196, question='On which date do people celebrate New Year’s Day?', correct=7, chosen=8, rew=-1, eps=0.373
+INFO:root:[AutoTrain] ep=196, question='On which date do people celebrate New Yearâ€™s Day?', correct=7, chosen=8, rew=-1, eps=0.373
 INFO:root:[AutoTrain] ep=197, question='Date of New Year's Day?', correct=7, chosen=1, rew=-1, eps=0.371
 INFO:root:[AutoTrain] ep=198, question='UHK university location?', correct=2, chosen=10, rew=-1, eps=0.369
 INFO:root:[AutoTrain] ep=199, question='Where will I be in 10 years?', correct=11, chosen=8, rew=-1, eps=0.367
@@ -239,7 +239,7 @@ INFO:root:[AutoTrain] ep=237, question='What is the name of the painting , which
 INFO:root:[AutoTrain] ep=238, question='Give me an example of a secure password.', correct=4, chosen=8, rew=-1, eps=0.302
 INFO:root:[AutoTrain] ep=239, question='What day is New Year?', correct=7, chosen=6, rew=-1, eps=0.300
 INFO:root:[AutoTrain] ep=240, question='What is the difference between a city and a country?', correct=4, chosen=8, rew=-1, eps=0.299
-INFO:root:[AutoTrain] ep=241, question='When is New Year’s Day celebrated?', correct=7, chosen=8, rew=-1, eps=0.297
+INFO:root:[AutoTrain] ep=241, question='When is New Yearâ€™s Day celebrated?', correct=7, chosen=8, rew=-1, eps=0.297
 INFO:root:[AutoTrain] ep=242, question='How does a leap year work? ', correct=4, chosen=8, rew=-1, eps=0.296
 INFO:root:[AutoTrain] ep=243, question='What is the name of the painting , which features a lady with an ermine?', correct=9, chosen=8, rew=-1, eps=0.294
 INFO:root:[AutoTrain] ep=244, question='When is January 1 celebrated?', correct=7, chosen=8, rew=-1, eps=0.293
@@ -249,7 +249,7 @@ INFO:root:[AutoTrain] ep=247, question='What happens when you mix blue and yello
 INFO:root:[AutoTrain] ep=248, question='What will the stock market do next week?', correct=11, chosen=8, rew=-1, eps=0.287
 INFO:root:[AutoTrain] ep=249, question='Which artist painted 'Lady with an Ermine'?', correct=1, chosen=1, rew=1, eps=0.286
 INFO:root:[AutoTrain] ep=250, question='What is the capital of Poland?', correct=0, chosen=8, rew=-1, eps=0.284
-INFO:root:[AutoTrain] ep=251, question='When is New Year’s Day celebrated?', correct=7, chosen=5, rew=-1, eps=0.283
+INFO:root:[AutoTrain] ep=251, question='When is New Yearâ€™s Day celebrated?', correct=7, chosen=5, rew=-1, eps=0.283
 INFO:root:[AutoTrain] ep=252, question='Which language is spoken in Czech Republic?', correct=10, chosen=1, rew=-1, eps=0.281
 INFO:root:[AutoTrain] ep=253, question='Where is located the painting called 'Lady with an Ermine'?', correct=8, chosen=9, rew=-1, eps=0.280
 INFO:root:[AutoTrain] ep=254, question='Lady with Ermine location?', correct=8, chosen=8, rew=1, eps=0.279
@@ -359,7 +359,7 @@ INFO:root:[AutoTrain] ep=357, question='Czech Republic official language?', corr
 INFO:root:[AutoTrain] ep=358, question='Is there a university called UHK?', correct=2, chosen=1, rew=-1, eps=0.165
 INFO:root:[AutoTrain] ep=359, question='What is the capital of Czech Republic?', correct=5, chosen=5, rew=1, eps=0.165
 INFO:root:[AutoTrain] ep=360, question='What is the name of the painting , which features a lady with an ermine?', correct=9, chosen=9, rew=1, eps=0.164
-INFO:root:[AutoTrain] ep=361, question='When is New Year’s Day celebrated?', correct=7, chosen=1, rew=-1, eps=0.163
+INFO:root:[AutoTrain] ep=361, question='When is New Yearâ€™s Day celebrated?', correct=7, chosen=1, rew=-1, eps=0.163
 INFO:root:[AutoTrain] ep=362, question='How many days does February have in a leap year?', correct=3, chosen=3, rew=1, eps=0.162
 INFO:root:[AutoTrain] ep=363, question='Where can I find the painting 'Lady with an Ermine'?', correct=8, chosen=8, rew=1, eps=0.161
 INFO:root:[AutoTrain] ep=364, question='Who painted the Lady with an Ermine?', correct=1, chosen=1, rew=1, eps=0.160
@@ -405,10 +405,10 @@ INFO:root:[AutoTrain] ep=403, question='Where is the capital city of Poland?', c
 INFO:root:[AutoTrain] ep=404, question='Date of New Year's Day?', correct=7, chosen=5, rew=-1, eps=0.131
 INFO:root:[AutoTrain] ep=405, question='Explain the concept of gravity in simple terms.', correct=4, chosen=12, rew=-1, eps=0.131
 INFO:root:[AutoTrain] ep=406, question='What is the capital of Germany?', correct=6, chosen=6, rew=1, eps=0.130
-INFO:root:[AutoTrain] ep=407, question='On which date do people celebrate New Year’s Day?', correct=7, chosen=10, rew=-1, eps=0.129
+INFO:root:[AutoTrain] ep=407, question='On which date do people celebrate New Yearâ€™s Day?', correct=7, chosen=10, rew=-1, eps=0.129
 INFO:root:[AutoTrain] ep=408, question='Which country has Lady with an Ermine?', correct=8, chosen=8, rew=1, eps=0.129
 INFO:root:[AutoTrain] ep=409, question='What is Poland's capital?', correct=0, chosen=11, rew=-1, eps=0.128
-INFO:root:[AutoTrain] ep=410, question='When is New Year’s Day celebrated?', correct=7, chosen=5, rew=-1, eps=0.127
+INFO:root:[AutoTrain] ep=410, question='When is New Yearâ€™s Day celebrated?', correct=7, chosen=5, rew=-1, eps=0.127
 INFO:root:[AutoTrain] ep=411, question='Where is 'Lady with an Ermine' kept?', correct=8, chosen=4, rew=-1, eps=0.127
 INFO:root:[AutoTrain] ep=412, question='Lady with Ermine location?', correct=8, chosen=5, rew=-1, eps=0.126
 INFO:root:[AutoTrain] ep=413, question='Capital of Poland is? ', correct=0, chosen=1, rew=-1, eps=0.126
@@ -468,12 +468,12 @@ INFO:root:[AutoTrain] ep=466, question='What is the name of university in Hradec
 INFO:root:[AutoTrain] ep=467, question='Which language do Czechs speak?', correct=10, chosen=2, rew=-1, eps=0.096
 INFO:root:[AutoTrain] ep=468, question='What is the capital of Poland?', correct=0, chosen=11, rew=-1, eps=0.095
 INFO:root:[AutoTrain] ep=469, question='Capitol of Poland?', correct=0, chosen=10, rew=-1, eps=0.095
-INFO:root:[AutoTrain] ep=470, question='On which date do people celebrate New Year’s Day?', correct=7, chosen=7, rew=1, eps=0.094
+INFO:root:[AutoTrain] ep=470, question='On which date do people celebrate New Yearâ€™s Day?', correct=7, chosen=7, rew=1, eps=0.094
 INFO:root:[AutoTrain] ep=471, question='Warsaw is the capital of which country?', correct=8, chosen=8, rew=1, eps=0.094
 INFO:root:[AutoTrain] ep=472, question='Czech Republic official language?', correct=10, chosen=10, rew=1, eps=0.093
 INFO:root:[AutoTrain] ep=473, question='What is the capital of Poland?', correct=0, chosen=11, rew=-1, eps=0.093
 INFO:root:[AutoTrain] ep=474, question='Warsaw is capital of what country?', correct=8, chosen=7, rew=-1, eps=0.092
-INFO:root:[AutoTrain] ep=475, question='On which date do people celebrate New Year’s Day?', correct=7, chosen=9, rew=-1, eps=0.092
+INFO:root:[AutoTrain] ep=475, question='On which date do people celebrate New Yearâ€™s Day?', correct=7, chosen=9, rew=-1, eps=0.092
 INFO:root:[AutoTrain] ep=476, question='What is the capital of the Czech Republic?', correct=5, chosen=5, rew=1, eps=0.092
 INFO:root:[AutoTrain] ep=477, question='Can you tell me what I had for breakfast today?', correct=11, chosen=1, rew=-1, eps=0.091
 INFO:root:[AutoTrain] ep=478, question='Where is 'Lady with an Ermine' located?', correct=8, chosen=10, rew=-1, eps=0.091
@@ -509,7 +509,7 @@ INFO:root:[AutoTrain] ep=507, question='Who is the author of 'Lady with an Ermin
 INFO:root:[AutoTrain] ep=508, question='Name the painter of the Lady with an Ermine.', correct=1, chosen=1, rew=1, eps=0.078
 INFO:root:[AutoTrain] ep=509, question='Can you tell me what I had for breakfast today?', correct=11, chosen=9, rew=-1, eps=0.078
 INFO:root:[AutoTrain] ep=510, question='What is the next number in the sequence: 2, 4 , 8, 16...?', correct=4, chosen=7, rew=-1, eps=0.077
-INFO:root:[AutoTrain] ep=511, question='On which date do people celebrate New Year’s Day?', correct=7, chosen=8, rew=-1, eps=0.077
+INFO:root:[AutoTrain] ep=511, question='On which date do people celebrate New Yearâ€™s Day?', correct=7, chosen=8, rew=-1, eps=0.077
 INFO:root:[AutoTrain] ep=512, question='Name Poland' s capital city', correct=0, chosen=2, rew=-1, eps=0.076
 INFO:root:[AutoTrain] ep=513, question='What is my favorite color?', correct=11, chosen=9, rew=-1, eps=0.076
 INFO:root:[AutoTrain] ep=514, question='Which language do Czechs speak?', correct=10, chosen=10, rew=1, eps=0.076
@@ -570,7 +570,7 @@ INFO:root:[AutoTrain] ep=568, question='What language do people speak in Czechia
 INFO:root:[AutoTrain] ep=569, question='Czech Republic official language?', correct=10, chosen=10, rew=1, eps=0.057
 INFO:root:[AutoTrain] ep=570, question='Explain the concept of gravity in simple terms.', correct=4, chosen=0, rew=-1, eps=0.057
 INFO:root:[AutoTrain] ep=571, question='Name Poland' s capital city', correct=0, chosen=2, rew=-1, eps=0.057
-INFO:root:[AutoTrain] ep=572, question='On which date do people celebrate New Year’s Day?', correct=7, chosen=7, rew=1, eps=0.057
+INFO:root:[AutoTrain] ep=572, question='On which date do people celebrate New Yearâ€™s Day?', correct=7, chosen=7, rew=1, eps=0.057
 INFO:root:[AutoTrain] ep=573, question='How many days does February have in a leap year?', correct=3, chosen=3, rew=1, eps=0.056
 INFO:root:[AutoTrain] ep=574, question='Where is the capital city of Poland?', correct=0, chosen=0, rew=1, eps=0.056
 INFO:root:[AutoTrain] ep=575, question='Who painted the Lady with an Ermine?', correct=1, chosen=3, rew=-1, eps=0.056
@@ -595,12 +595,12 @@ INFO:root:[AutoTrain] ep=593, question='Where you can found painting: Lady with 
 INFO:root:[AutoTrain] ep=594, question='Capital of Poland is? ', correct=0, chosen=0, rew=1, eps=0.051
 INFO:root:[AutoTrain] ep=595, question='Where is located the painting called 'Lady with an Ermine'?', correct=8, chosen=8, rew=1, eps=0.050
 INFO:root:[AutoTrain] ep=596, question='Which language is spoken in Czech Republic?', correct=10, chosen=10, rew=1, eps=0.050
-INFO:root:[AutoTrain] ep=597, question='On which date do people celebrate New Year’s Day?', correct=7, chosen=7, rew=1, eps=0.050
+INFO:root:[AutoTrain] ep=597, question='On which date do people celebrate New Yearâ€™s Day?', correct=7, chosen=7, rew=1, eps=0.050
 INFO:root:[AutoTrain] ep=598, question='Czech Republic language?', correct=10, chosen=10, rew=1, eps=0.050
 INFO:root:[AutoTrain] ep=599, question='Who will be the next president of Poland?', correct=11, chosen=1, rew=-1, eps=0.049
 INFO:root:[AutoTrain] ep=600, question='Which language do people speak in Czech Republic?', correct=10, chosen=10, rew=1, eps=0.049
 INFO:root:[AutoTrain] ep=601, question='Warsaw is the capital of which country?', correct=8, chosen=8, rew=1, eps=0.049
-INFO:root:[AutoTrain] ep=602, question='When is New Year’s Day celebrated?', correct=7, chosen=7, rew=1, eps=0.049
+INFO:root:[AutoTrain] ep=602, question='When is New Yearâ€™s Day celebrated?', correct=7, chosen=7, rew=1, eps=0.049
 INFO:root:[AutoTrain] ep=603, question='Who is the painter of 'Lady with an Ermine'?', correct=1, chosen=1, rew=1, eps=0.048
 INFO:root:[AutoTrain] ep=604, question='What is the capital of Germany?', correct=6, chosen=6, rew=1, eps=0.048
 INFO:root:[AutoTrain] ep=605, question='Berlin is capital of which country?', correct=12, chosen=0, rew=-1, eps=0.048
@@ -687,7 +687,7 @@ INFO:root:[AutoTrain] ep=685, question='New Year's Day date?', correct=7, chosen
 INFO:root:[AutoTrain] ep=686, question='Where can I find the painting 'Lady with an Ermine'?', correct=8, chosen=8, rew=1, eps=0.032
 INFO:root:[AutoTrain] ep=687, question='Tell me about UHK', correct=2, chosen=7, rew=-1, eps=0.032
 INFO:root:[AutoTrain] ep=688, question='How many days does February have in a leap year?', correct=3, chosen=3, rew=1, eps=0.032
-INFO:root:[AutoTrain] ep=689, question='On which date do people celebrate New Year’s Day?', correct=7, chosen=7, rew=1, eps=0.031
+INFO:root:[AutoTrain] ep=689, question='On which date do people celebrate New Yearâ€™s Day?', correct=7, chosen=7, rew=1, eps=0.031
 INFO:root:[AutoTrain] ep=690, question='Language spoken in Czech Republic?', correct=10, chosen=10, rew=1, eps=0.031
 INFO:root:[AutoTrain] ep=691, question='What is the capital of Poland?', correct=0, chosen=0, rew=1, eps=0.031
 INFO:root:[AutoTrain] ep=692, question='Which language do people speak in Czech Republic?', correct=10, chosen=10, rew=1, eps=0.031
@@ -717,7 +717,7 @@ INFO:root:[AutoTrain] ep=715, question='Date of New Year's Day?', correct=7, cho
 INFO:root:[AutoTrain] ep=716, question='Who is the painter of 'Lady with an Ermine'?', correct=1, chosen=1, rew=1, eps=0.027
 INFO:root:[AutoTrain] ep=717, question='Czech Republic official language?', correct=10, chosen=10, rew=1, eps=0.027
 INFO:root:[AutoTrain] ep=718, question='Which artist painted 'Lady with an Ermine'?', correct=1, chosen=1, rew=1, eps=0.027
-INFO:root:[AutoTrain] ep=719, question='On which date do people celebrate New Year’s Day?', correct=7, chosen=7, rew=1, eps=0.027
+INFO:root:[AutoTrain] ep=719, question='On which date do people celebrate New Yearâ€™s Day?', correct=7, chosen=7, rew=1, eps=0.027
 INFO:root:[AutoTrain] ep=720, question='What is the difference between a city and a country?', correct=4, chosen=7, rew=-1, eps=0.027
 INFO:root:[AutoTrain] ep=721, question='Which language do Czechs speak?', correct=10, chosen=10, rew=1, eps=0.027
 INFO:root:[AutoTrain] ep=722, question='What is the capital of Czech Republic?', correct=5, chosen=5, rew=1, eps=0.027
@@ -869,7 +869,7 @@ INFO:root:[AutoTrain] ep=867, question='Which university that teaches computer s
 INFO:root:[AutoTrain] ep=868, question='Berlin is capital of which country?', correct=12, chosen=7, rew=-1, eps=0.013
 INFO:root:[AutoTrain] ep=869, question='Warsaw is the capital of which country?', correct=8, chosen=8, rew=1, eps=0.013
 INFO:root:[AutoTrain] ep=870, question='Who created the painting 'Lady with an Ermine'?', correct=1, chosen=1, rew=1, eps=0.013
-INFO:root:[AutoTrain] ep=871, question='When is New Year’s Day celebrated?', correct=7, chosen=7, rew=1, eps=0.013
+INFO:root:[AutoTrain] ep=871, question='When is New Yearâ€™s Day celebrated?', correct=7, chosen=7, rew=1, eps=0.013
 INFO:root:[AutoTrain] ep=872, question='Can you tell me what I had for breakfast today?', correct=11, chosen=7, rew=-1, eps=0.013
 INFO:root:[AutoTrain] ep=873, question='Which language is spoken in Czech Republic?', correct=10, chosen=10, rew=1, eps=0.013
 INFO:root:[AutoTrain] ep=874, question='Who is the author of the painting 'Lady with an Ermine'?', correct=1, chosen=1, rew=1, eps=0.012
@@ -937,7 +937,7 @@ INFO:root:[AutoTrain] ep=935, question='Where is 'Lady with an Ermine' displayed
 INFO:root:[AutoTrain] ep=936, question='Where is 'Lady with an Ermine' located?', correct=8, chosen=8, rew=1, eps=0.010
 INFO:root:[AutoTrain] ep=937, question='What day is New Year?', correct=7, chosen=7, rew=1, eps=0.010
 INFO:root:[AutoTrain] ep=938, question='Give me an example of a secure password.', correct=4, chosen=11, rew=-1, eps=0.010
-INFO:root:[AutoTrain] ep=939, question='When is New Year’s Day celebrated?', correct=7, chosen=7, rew=1, eps=0.010
+INFO:root:[AutoTrain] ep=939, question='When is New Yearâ€™s Day celebrated?', correct=7, chosen=7, rew=1, eps=0.010
 INFO:root:[AutoTrain] ep=940, question='What is the capital of Czech Republic?', correct=5, chosen=5, rew=1, eps=0.010
 INFO:root:[AutoTrain] ep=941, question='Where you can found painting: Lady with an Ermine?', correct=8, chosen=8, rew=1, eps=0.010
 INFO:root:[AutoTrain] ep=942, question='Berlin is capital of which country?', correct=12, chosen=5, rew=-1, eps=0.010
@@ -988,7 +988,7 @@ INFO:root:[AutoTrain] ep=986, question='How many days does February have in a le
 INFO:root:[AutoTrain] ep=987, question='How many days does February contain in a leap year?', correct=3, chosen=3, rew=1, eps=0.010
 INFO:root:[AutoTrain] ep=988, question='New Year's Day date?', correct=7, chosen=7, rew=1, eps=0.010
 INFO:root:[AutoTrain] ep=989, question='Painter of the Lady with an Ermine?', correct=1, chosen=1, rew=1, eps=0.010
-INFO:root:[AutoTrain] ep=990, question='On which date do people celebrate New Year’s Day?', correct=7, chosen=7, rew=1, eps=0.010
+INFO:root:[AutoTrain] ep=990, question='On which date do people celebrate New Yearâ€™s Day?', correct=7, chosen=7, rew=1, eps=0.010
 INFO:root:[AutoTrain] ep=991, question='How many planets will be discovered in the future?', correct=11, chosen=11, rew=1, eps=0.010
 INFO:root:[AutoTrain] ep=992, question='Where is 'Lady with an Ermine' kept?', correct=8, chosen=8, rew=1, eps=0.010
 INFO:root:[AutoTrain] ep=993, question='What language do people speak in Czech Republic?', correct=10, chosen=10, rew=1, eps=0.010
@@ -1002,14 +1002,14 @@ INFO:root:[Training] Duration: 250.81 seconds (4 min 10 sec)
 INFO:root:[UserChat] ecount=0, question='What is the capital of Poland?', action=0, rew=1, eps=0.010, CONFIDENCE=0.3909, TIME=0.1069s, CPU=(0.00%->85.20%), MEM=(313.77MB->313.77MB), answer='Warsaw', lenResp=1, Repeated=False 
 INFO:root:[UserChat] ecount=1, question='How many days does February have in a leap year?', action=3, rew=1, eps=0.010, CONFIDENCE=0.3316, TIME=0.0640s, CPU=(4.00%->100.80%), MEM=(313.77MB->313.86MB), answer='29 days in a leap year', lenResp=6, Repeated=False 
 INFO:root:[UserChat] ecount=2, question='What is the name of university in Hradec Kralove?', action=2, rew=1, eps=0.010, CONFIDENCE=0.3012, TIME=0.0640s, CPU=(2.60%->99.20%), MEM=(313.86MB->313.91MB), answer='UHK (University of Hradec Kralove)', lenResp=5, Repeated=False 
-INFO:root:[UserChat] ecount=3, question='When is New Year’s Day celebrated?', action=7, rew=1, eps=0.010, CONFIDENCE=0.4076, TIME=0.0600s, CPU=(0.30%->67.90%), MEM=(313.91MB->314.11MB), answer='1 January', lenResp=2, Repeated=False 
+INFO:root:[UserChat] ecount=3, question='When is New Yearâ€™s Day celebrated?', action=7, rew=1, eps=0.010, CONFIDENCE=0.4076, TIME=0.0600s, CPU=(0.30%->67.90%), MEM=(313.91MB->314.11MB), answer='1 January', lenResp=2, Repeated=False 
 INFO:root:[UserChat] ecount=4, question='Who painted the Lady with an Ermine?', action=1, rew=1, eps=0.010, CONFIDENCE=0.3292, TIME=0.1029s, CPU=(3.50%->84.00%), MEM=(314.43MB->314.43MB), answer='Leonardo da Vinci', lenResp=3, Repeated=False 
 INFO:root:[UserChat] ecount=5, question='Where is the painting called 'Lady with an Ermine' located?', action=8, rew=1, eps=0.010, CONFIDENCE=0.4057, TIME=0.0999s, CPU=(5.50%->99.70%), MEM=(314.44MB->314.44MB), answer='Poland', lenResp=1, Repeated=False 
 INFO:root:[UserChat] ecount=6, question='What is the language used in the Czech Republic?', action=10, rew=1, eps=0.010, CONFIDENCE=0.3553, TIME=0.0890s, CPU=(3.90%->133.00%), MEM=(314.57MB->314.64MB), answer='Czech', lenResp=1, Repeated=False 
 INFO:root:[UserChat] ecount=7, question='Warsaw is the capital of which country?', action=8, rew=1, eps=0.010, CONFIDENCE=0.3461, TIME=0.0710s, CPU=(5.50%->74.40%), MEM=(308.04MB->308.05MB), answer='Poland', lenResp=1, Repeated=False 
 INFO:root:[UserChat] ecount=8, question='How many days does February contain in a leap year?', action=3, rew=1, eps=0.010, CONFIDENCE=0.3435, TIME=0.0870s, CPU=(5.40%->99.70%), MEM=(308.29MB->308.36MB), answer='29 days in a leap year', lenResp=6, Repeated=False 
 INFO:root:[UserChat] ecount=9, question='Which university that teaches computer science is the biggest in Hradec Kralove?', action=2, rew=1, eps=0.010, CONFIDENCE=0.3130, TIME=0.0600s, CPU=(4.10%->133.00%), MEM=(308.40MB->308.40MB), answer='UHK (University of Hradec Kralove)', lenResp=5, Repeated=False 
-INFO:root:[UserChat] ecount=10, question='On which date do people celebrate New Year’s Day?', action=7, rew=1, eps=0.010, CONFIDENCE=0.4244, TIME=0.0899s, CPU=(3.80%->83.10%), MEM=(308.40MB->308.41MB), answer='1 January', lenResp=2, Repeated=False 
+INFO:root:[UserChat] ecount=10, question='On which date do people celebrate New Yearâ€™s Day?', action=7, rew=1, eps=0.010, CONFIDENCE=0.4244, TIME=0.0899s, CPU=(3.80%->83.10%), MEM=(308.40MB->308.41MB), answer='1 January', lenResp=2, Repeated=False 
 INFO:root:[UserChat] ecount=11, question='Who is the author of painting 'Lady with an Ermine'?', action=1, rew=1, eps=0.010, CONFIDENCE=0.3924, TIME=0.1009s, CPU=(1.30%->84.00%), MEM=(308.60MB->308.62MB), answer='Leonardo da Vinci', lenResp=3, Repeated=False 
 INFO:root:[UserChat] ecount=12, question='In which country can you find the painting 'Lady with an Ermine'?', action=8, rew=1, eps=0.010, CONFIDENCE=0.3882, TIME=0.1059s, CPU=(2.70%->71.70%), MEM=(308.62MB->308.62MB), answer='Poland', lenResp=1, Repeated=False 
 INFO:root:[UserChat] ecount=13, question='Which language is spoken in the Czech Republic ?', action=10, rew=1, eps=0.010, CONFIDENCE=0.3693, TIME=0.0650s, CPU=(3.30%->74.40%), MEM=(308.71MB->308.71MB), answer='Czech', lenResp=1, Repeated=False 
@@ -1022,7 +1022,7 @@ INFO:root:[UserChat] ecount=19, question='Can you tell me what I had for breakfa
 INFO:root:[UserChat] ecount=20, question='Who will be the next president of Poland?', action=0, rew=0, eps=0.010, CONFIDENCE=0.1591, TIME=0.0959s, CPU=(4.90%->84.00%), MEM=(309.20MB->309.20MB), answer='Warsaw', lenResp=1, Repeated=False 
 INFO:root:[UserChat] ecount=21, question='Give me an example of a secure password.', action=0, rew=-1, eps=0.010, CONFIDENCE=0.0959, TIME=0.0815s, CPU=(1.80%->98.90%), MEM=(309.29MB->309.30MB), answer='Warsaw', lenResp=1, Repeated=False 
 INFO:root:[UserChat] ecount=22, question='What is the next number in the sequence: 2, 4, 8, 16...?', action=11, rew=1, eps=0.010, CONFIDENCE=0.0981, TIME=0.0889s, CPU=(3.50%->83.10%), MEM=(309.30MB->309.30MB), answer='This question is totally far beyond my knowledge', lenResp=8, Repeated=False 
-INFO:root:[UserChat] ecount=23, question='What is the difference between a city and a country?', action=3, rew=-1, eps=0.010, CONFIDENCE=0.0942, TIME=0.2549s, CPU=(1.30%->50.00%), MEM=(309.30MB->309.30MB), answer='29 days in a leap year', lenResp=6, Repeated=False 
+INFO:root:[UserChat] ecount=23, question='What is the difference between a city and a country?', action=3, rew=-1, eps=0.010, CONFIDENCE=0.0942, TIME=0.2549s, CPU=(1.30%->50.00%), MEM=(309.30MB->309.30MB), answer='Germany', lenResp=6, Repeated=False 
 INFO:root:[UserChat] ecount=24, question='How does a leap year work?', action=10, rew=-1, eps=0.010, CONFIDENCE=0.1004, TIME=0.0630s, CPU=(3.60%->100.80%), MEM=(309.30MB->309.31MB), answer='Czech', lenResp=1, Repeated=False 
 INFO:root:[UserChat] ecount=25, question='Explain the concept of gravity in simple terms.', action=3, rew=-1, eps=0.010, CONFIDENCE=0.0941, TIME=0.1319s, CPU=(5.20%->75.00%), MEM=(309.31MB->309.31MB), answer='29 days in a leap year', lenResp=6, Repeated=False 
 WARNING:root:[WARNING] Possibly fallback or unknown answer for input='What are the main colors of the Polish flag?'
@@ -1030,5 +1030,5 @@ INFO:root:[UserChat] ecount=26, question='What are the main colors of the Polish
 INFO:root:[UserChat] ecount=27, question='What happens when you mix blue and yellow paint?', action=7, rew=-1, eps=0.010, CONFIDENCE=0.1082, TIME=0.1959s, CPU=(3.40%->53.90%), MEM=(309.31MB->309.34MB), answer='1 January', lenResp=2, Repeated=False 
 INFO:root:[UserChat] ecount=28, question='jklzxhkjsdh', action=7, rew=0, eps=0.010, CONFIDENCE=0.1025, TIME=0.0899s, CPU=(1.70%->80.10%), MEM=(309.33MB->309.34MB), answer='1 January', lenResp=2, Repeated=False 
 INFO:root:[UserChat] ecount=29, question='uioghiufyitdfyl oit 86rt0o87rfuog p9', action=7, rew=-1, eps=0.010, CONFIDENCE=0.1025, TIME=0.0590s, CPU=(2.60%->99.20%), MEM=(309.35MB->309.37MB), answer='1 January', lenResp=2, Repeated=False 
-INFO:root:[UserChat] ecount=30, question='cos niecoœœœ ', action=7, rew=-1, eps=0.010, CONFIDENCE=0.1025, TIME=0.0881s, CPU=(2.30%->67.20%), MEM=(309.37MB->309.37MB), answer='1 January', lenResp=2, Repeated=False 
+INFO:root:[UserChat] ecount=30, question='cos niecoÅ“Å“Å“ ', action=7, rew=-1, eps=0.010, CONFIDENCE=0.1025, TIME=0.0881s, CPU=(2.30%->67.20%), MEM=(309.37MB->309.37MB), answer='1 January', lenResp=2, Repeated=False 
 DEBUG:h5py._conv:Creating converter from 5 to 3
