@@ -3,12 +3,12 @@ from datetime import datetime
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 
-# Ustawienia logowania do pliku
 log_file = "chatbotA_log.txt"
 logging.basicConfig(
     filename=log_file,
     level=logging.DEBUG,
-    format="%(asctime)s - %(levelname)s - %(message)s",
+    format="%(asctime)s - %(levelname)s - %(message)s" ,
+    
     datefmt="%Y-%m-%d %H:%M:%S"
 )
 
@@ -19,17 +19,17 @@ def run_chatbot():
     Simple chatbot (based on ListTrainer),  use defined sets of questions-answers 
     """ 
 
-    # 1. Chatbot initialization - simple config 
+     #   1. Chatbot initialization - simple config 
  
     chatbot = ChatBot(
-    "ChatbotA",
+    "ChatbotA " ,
+
+        
     database_uri="sqlite:///C:\\Users\\Dell\\Downloads\\AIbakalar\\PROJEKT\\chatbotA-DATABASE.db"
 )
-
-    # 2. trainer definition
     trainer = ListTrainer(chatbot)
 
-    # 3. Set of questions  -> answers (Basic Facts)
+    #  Set of questions  ->  ==== answers ( Basic Facts  )
 
     conversation_basic = [
          # question  
@@ -58,7 +58,7 @@ def run_chatbot():
 
     ]
 
-    # 4> Set of answers -> question  ( Paraphrased Examples )
+    #  Set of answers -> question  ->  ( Paraphrased Examples )
 
     
     #  np. rewording " Which city hosts Germany’s main government offices? "
@@ -82,6 +82,8 @@ def run_chatbot():
 
 
        "Who created the painting 'Lady with an Ermine'?",
+
+        
         "Leonardo da Vinci painted the Lady with an Ermine. ",
 
 
@@ -101,19 +103,20 @@ def run_chatbot():
 
     ]
 
-    # 5 chatbot training based on those (lists) 
+    #  chatbot training based on those (lista) 
 
     trainer.train(conversation_basic)
 
     trainer.train(conversation_paraphrased)
 
-    # 6. Siple loop for questions :
+    #  Siple lop for questions :
 
     print(" 🤖🤖 ChatbotA 🤖🤖 is ONLINE. Wanna quit-> type 'exit' or 'quit' or 'bye chat' to stop it. ")
     while True:
-        user_input = input("👦 Human: ")
+        user_input = input("👦 Human:  " )
 
         if user_input.lower() in ["exit", "quit", "bye chat"]:
+            
             print(" 🤖 ChatbotA: See ya! ")
 
             break 
@@ -122,12 +125,12 @@ def run_chatbot():
         response = chatbot.get_response(user_input)   
         confidence = getattr(response, 'confidence', "N/A")  # confidence 
 
-        print( " 🤖 ChatbotA:" , response) 
+        print( " 🤖 ChatbotA: " , response) 
 
        
 
         # 8>> Log
-        log_message = f"{datetime.now()} | QUESTION: {user_input} | RESPONSE: {response} | CONFIDENCE: {confidence}"
+        log_message = f"{datetime.now()} | QUESTION: {user_input} | RESPONSE: { response } | CONFIDENCE: {confidence}"
         logging.info(log_message)  
 
 
